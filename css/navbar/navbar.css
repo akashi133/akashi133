@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+.navblock {
+  background-color: black;
+  display: flex;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  border: 5px solid black;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+.navblock .logo img {
+  width: 100px;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+.navblock ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  padding-top: 13px;
+}
+.navblock ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.724);
+}
+.navblock ul a:hover {
+  color: white;
+  transition: 0.3s;
+}/*# sourceMappingURL=navbar.css.map */

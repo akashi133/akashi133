@@ -1,0 +1,26 @@
+.foot-text {
+  margin-top: 150px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.foot-text ul {
+  width: 200px;
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+}
+.foot-text ul li {
+  border-bottom: 1px solid white;
+  list-style: none;
+  letter-spacing: 1px;
+  color: #adabab;
+  text-align: center;
+}
+.foot-text ul a {
+  gap: 50px;
+  color: #adabab;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}/*# sourceMappingURL=footer.css.map */

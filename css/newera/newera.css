@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap");
+.newera {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.newera h3 {
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: white;
+}
+.newera img {
+  width: 600px;
+  margin-bottom: 40px;
+}
+.newera p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 65%;
+}/*# sourceMappingURL=newera.css.map */
