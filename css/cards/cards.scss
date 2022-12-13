@@ -48,3 +48,31 @@
         font-size: 80px;
     }
 }
+
+@media  all and (max-width: 399px) {
+    .card-group, .card-body, .card-img-top {
+        margin: 0 auto;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        .card, p {
+            width: 300px;
+        }
+        
+        width: 350px;
+        .card {
+            width: 350px;
+            .card-img-top {
+                width: 350px;
+            }
+        }
+    }
+    .title-heroes {
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            max-width: 399px;
+        }
+    }
+}

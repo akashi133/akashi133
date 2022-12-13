@@ -27,4 +27,18 @@
   font-size: 20px;
   box-sizing: border-box;
   width: 65%;
+}
+
+@media screen and (max-width: 399px) {
+  .newera {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .newera h3 {
+    text-align: center;
+  }
+  .newera img {
+    width: 300px;
+  }
 }/*# sourceMappingURL=newera.css.map */

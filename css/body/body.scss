@@ -8,8 +8,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-$image:  url(../assets/mw2-home-desktop-bg.jpg);
-$image__ghost : url(./../assets/mw2-ghost-hero-desktop.png);
+$image:  url(../../assets/mw2-home-desktop-bg.jpg);
+$image__ghost : url(../../assets/mw2-ghost-hero-desktop.png);
 @mixin button {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
@@ -28,21 +28,22 @@ $image__ghost : url(./../assets/mw2-ghost-hero-desktop.png);
     &:hover {
         color: white;
         text-shadow: 0px 0px 15px black;
+    }
 }
-}
-    
-body {
-    background-color: #252525;
-    background: $image;
-    background-repeat: repeat-y;
-    // height: 1200vh;
 
+body {
+    background-color: #000 !important;
+    
+    
 }
 main {
+    background: $image;
+    background-repeat: repeat-y;
     .main_block {
         position: relative;
         padding-top: 120px;
-        background: $image__ghost no-repeat;
+        background: $image__ghost;
+        background-repeat: no-repeat;
         background-size: contain;
         height: 100vh;
         display: flex;
@@ -52,6 +53,7 @@ main {
             height: 50%;
         }
         .right {
+            justify-content: center;
             img {
                 margin-top: 50px;
                 margin-left: 130px;
@@ -67,7 +69,6 @@ main {
                 color: #fff;
                 margin-left: 140px;
                 margin-top: 15px;
-
             }
             p{
                 margin-top: 10px;
@@ -77,6 +78,7 @@ main {
                 margin-left: 130px;
                 font-weight: 600;
                 color: #fff;
+                box-sizing: border-box
             }
             
             button {
@@ -95,6 +97,48 @@ main {
                     margin-left: 4px;
                 }
 
+            }
+        }
+    }
+
+}
+@media  all and (max-width: 400px) {
+    body {
+        width: 400px;
+    }
+    main {
+        display: block;
+        // flex-direction: column;
+        .main_block {
+            background: none;
+            display: block;
+            .left {
+                background: url(../../assets/Trailer.png);
+                background-size: cover;
+                width: 100vw;
+                background-position-x: 25%;
+                height: 100vh;
+                background-repeat: no-repeat;
+                max-width: 100%;
+            }
+            .right {
+                // width: 300px;
+                // max-width: 100%;
+                // margin-left: 0;
+                display: none;
+                img {
+                    width: 200px;
+                }
+
+                h1 {
+                    width: 100px;
+                    text-align: right;
+                    max-width: 390px;
+                    display: block;
+                }
+                .card-text {
+                    max-width: 300px;
+                }
             }
         }
     }

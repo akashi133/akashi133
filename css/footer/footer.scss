@@ -1,27 +1,70 @@
-.foot-text {
-    margin-top: 150px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    ul{
-        width: 200px;
-        padding: 150px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+footer {
+    width:900px;
+    margin: 0 auto;
+    background: #000;
+    .foot-text {
+        margin-top: 130px;
         display: flex;
         justify-content: center;
-        li {
-            border-bottom: 1px solid white;
-            list-style: none;
-            letter-spacing: 1px;
-            color: #adabab;
-            text-align: center;
-        }
-        a {
-            gap: 50px;
-            color: #adabab;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 15px;
+        // position: relative;
+        ul{
+            // width: 200px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            li {
+                border-bottom: 1px solid white;
+                list-style: none;
+                letter-spacing: 1px;
+                color: #adabab;
+                text-align: center;
+            }
+            a {
+                gap: 50px;
+                color: #adabab;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
         }
     }
+    .foot-icons {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+        margin-bottom: 50px;
+    }
+    .copyright p {
+        font-size: 11px;
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: #adabab;
+        letter-spacing: 1px;
+        text-shadow: 0px 0px 18px #646464;
+        line-height: 130%;
+        text-align: center;
+    }
+}
 
+@media screen and (max-width: 399px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 399px;
+        .foot-text ul {
+            max-width: 399px;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            align-items: center;
+        }
+        .foot-icons {
+            flex-direction: column;
+            align-items: center;
+        }
+        .copyright {
+
+        }
+    }
 }

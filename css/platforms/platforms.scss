@@ -38,11 +38,34 @@
 .platform-paragraph {
     font-family: 'Roboto', sans-serif;
     color: white;
+    p{  
+        font-family: 'Roboto', sans-serif;
+        text-align: start;
+    }
     a {
         text-decoration: none;
         color: #71af3a;
         &:hover {
             color: #71af3a;
+        }
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .platform-logo {
+        display: block;
+        flex-direction: column;
+        div {
+            margin-bottom: 30px;
+        }
+    }
+    .platform-paragraph {
+        p { 
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: white;
         }
     }
 }

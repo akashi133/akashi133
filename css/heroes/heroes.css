@@ -115,4 +115,50 @@
   line-height: 1;
   margin-bottom: 50px;
   padding: 0 15px;
+}
+
+.wrapper2 {
+  display: block;
+  justify-content: center;
+}
+.wrapper2 img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+}
+
+.heroes {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.imgblock img {
+  justify-content: center;
+}
+
+@media screen and (max-width: 399px) {
+  .wrapper-btn button, .wrapper-btn2 button {
+    width: 200px;
+    padding: 5px;
+  }
+  .wrapper {
+    display: block;
+    justify-content: center;
+  }
+  .wrapper img {
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    justify-content: center;
+  }
+  .heroes {
+    display: block;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=heroes.css.map */

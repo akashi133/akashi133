@@ -11,6 +11,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 .card-group2 .imgblock img {
   width: 98%;
@@ -45,4 +46,21 @@
   font-size: 40px;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 399px) {
+  .platform-title h4 {
+    text-align: center;
+  }
+  .card-group2 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card-group2 .cards {
+    width: 300px;
+  }
+  .card-group2 .cards .imgblock img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=card-group2.css.map */

@@ -33,10 +33,31 @@
   font-family: "Roboto", sans-serif;
   color: white;
 }
+.platform-paragraph p {
+  font-family: "Roboto", sans-serif;
+  text-align: start;
+}
 .platform-paragraph a {
   text-decoration: none;
   color: #71af3a;
 }
 .platform-paragraph a:hover {
   color: #71af3a;
+}
+
+@media screen and (max-width: 399px) {
+  .platform-logo {
+    display: block;
+    flex-direction: column;
+  }
+  .platform-logo div {
+    margin-bottom: 30px;
+  }
+  .platform-paragraph p {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
 }/*# sourceMappingURL=platforms.css.map */

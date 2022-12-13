@@ -49,4 +49,29 @@
 .title-heroes h2 {
   margin-top: 50px;
   font-size: 80px;
+}
+
+@media all and (max-width: 399px) {
+  .card-group, .card-body, .card-img-top {
+    margin: 0 auto;
+    width: 100%;
+    width: 350px;
+  }
+  .card-group img, .card-body img, .card-img-top img {
+    width: 100%;
+  }
+  .card-group .card, .card-group p, .card-body .card, .card-body p, .card-img-top .card, .card-img-top p {
+    width: 300px;
+  }
+  .card-group .card, .card-body .card, .card-img-top .card {
+    width: 350px;
+  }
+  .card-group .card .card-img-top, .card-body .card .card-img-top, .card-img-top .card .card-img-top {
+    width: 350px;
+  }
+  .title-heroes h2 {
+    font-size: 30px;
+    text-align: center;
+    max-width: 399px;
+  }
 }/*# sourceMappingURL=cards.css.map */

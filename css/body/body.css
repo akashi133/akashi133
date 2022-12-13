@@ -1,3 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
+@import "../heroes/heroes.css";
+@import "../body/body.css";
+.navblock {
+  background-color: black;
+  display: flex;
+  text-decoration: none;
+  position: fixed;
+  text-align: center;
+  box-sizing: border-box;
+  border: 5px solid black;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+.navblock .logo img {
+  width: 100px;
+  margin-right: 40px;
+  margin-top: 5px;
+}
+.navblock ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  padding-top: 13px;
+}
+.navblock ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.724);
+}
+.navblock ul a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.newera {
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.newera h3 {
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: white;
+}
+.newera img {
+  width: 600px;
+  margin-bottom: 40px;
+}
+.newera p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  box-sizing: border-box;
+  width: 65%;
+}
+
+.card-group {
+  width: 1512px;
+  margin: 50px 75px;
+  padding: 30px;
+  gap: 30px;
+  border-bottom: 1px #5d5d5d solid;
+  border-top: 1px #5d5d5d solid;
+}
+
+.card-img-top {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+}
+
+.card-group .card {
+  background: rgba(255, 255, 255, 0.08);
+  --bs-card-border-width: 0px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.card-title {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.card-text {
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.card-text, .card-title {
+  color: #fff;
+}
+
+.title-heroes {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.title-heroes pre {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+}
+.title-heroes p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.title-heroes h2 {
+  margin-top: 50px;
+  font-size: 80px;
+}
+
+@media all and (max-width: 399px) {
+  .card-group, .card-body, .card-img-top {
+    width: 100%;
+    width: 300px;
+  }
+  .card-group img, .card-body img, .card-img-top img {
+    width: 100%;
+  }
+  .card-group .card, .card-group p, .card-body .card, .card-body p, .card-img-top .card, .card-img-top p {
+    width: 300px;
+  }
+  .card-group .card, .card-body .card, .card-img-top .card {
+    width: 100px;
+  }
+  .card-group .card .card-img-top, .card-body .card .card-img-top, .card-img-top .card .card-img-top {
+    width: 100px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +146,18 @@
 }
 
 body {
-  background-color: #252525;
+  background-color: #000 !important;
+}
+
+main {
   background: url(../../assets/mw2-home-desktop-bg.jpg);
   background-repeat: repeat-y;
 }
-
 main .main_block {
   position: relative;
   padding-top: 120px;
-  background: url(../../assets/mw2-ghost-hero-desktop.png) no-repeat;
+  background: url(../../assets/mw2-ghost-hero-desktop.png);
+  background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
   display: flex;
@@ -23,6 +167,7 @@ main .main_block .left {
   height: 50%;
 }
 main .main_block .right {
+  justify-content: center;
   text-align: center;
   justify-content: center;
 }
@@ -47,6 +192,7 @@ main .main_block .right p {
   margin-left: 130px;
   font-weight: 600;
   color: #fff;
+  box-sizing: border-box;
 }
 main .main_block .right button {
   font-family: "Open Sans", sans-serif;
@@ -78,4 +224,41 @@ main .main_block .right .frame__bg {
 main .main_block .right .frame__bg iframe {
   margin-top: 4px;
   margin-left: 4px;
+}
+
+@media all and (max-width: 400px) {
+  body {
+    width: 400px;
+  }
+  main {
+    display: block;
+  }
+  main .main_block {
+    background: none;
+    display: block;
+  }
+  main .main_block .left {
+    background: url(../../assets/Trailer.png);
+    background-size: cover;
+    width: 100vw;
+    background-position-x: 25%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+  main .main_block .right {
+    display: none;
+  }
+  main .main_block .right img {
+    width: 200px;
+  }
+  main .main_block .right h1 {
+    width: 100px;
+    text-align: right;
+    max-width: 390px;
+    display: block;
+  }
+  main .main_block .right .card-text {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=body.css.map */

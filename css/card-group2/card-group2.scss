@@ -15,6 +15,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        max-width: 100%;
         // margin-left: 100px;
     }
     
@@ -52,4 +53,21 @@
     font-size: 40px;
     display: flex;
     justify-content: center;
+}
+
+@media  screen and (max-width: 399px) {
+    .platform-title h4 {
+        text-align: center;
+    }
+    .card-group2 {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        .cards {
+            width: 300px;
+            .imgblock img {
+                width: 100%;
+            }
+        }
+    }
 }
