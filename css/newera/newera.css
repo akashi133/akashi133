@@ -29,8 +29,24 @@
   width: 65%;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 1440px) {
+  .newera h3 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .newera {
+    margin-top: -30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .newera h3 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .newera {
+    margin-top: 30px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -39,6 +55,6 @@
     text-align: center;
   }
   .newera img {
-    width: 300px;
+    width: 280px;
   }
 }/*# sourceMappingURL=newera.css.map */

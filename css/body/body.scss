@@ -55,7 +55,7 @@ main {
         .right {
             justify-content: center;
             img {
-                margin-top: 50px;
+                margin-top: 5px;
                 margin-left: 130px;
                 width: 500px;
             }
@@ -102,6 +102,139 @@ main {
     }
 
 }
+
+
+
+
+@media  screen and (max-width: 1440px) {
+    .right {
+        h1 {
+            font-size: 20px;
+            position: relative;
+        }
+    }
+    main .main_block .right img {
+        width: 400px;
+    }
+    main .main_block .right .frame__bg  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+        margin-left: 150px;
+        iframe {
+            width: 500px;
+            height: 300px;
+
+        }
+    }
+    main .main_block .right button {
+        width: 400px;
+        margin-left: 150px;
+        padding: 5px 10px;
+        margin-top: -10px;
+        
+    }
+    main .main_block .right {
+        justify-content: center;
+        margin-left: 100px;
+    }
+    main .main_block {
+        padding-top: 100px;
+    }
+}
+
+
+@media  screen and (max-width: 1024px) {
+    center {
+        justify-content: center;
+        align-items: center;
+        section {
+            margin: 0 -200px;
+            position: absolute;
+        }
+    }
+    main .main_block .right img {
+        width: 377px;
+    }
+    .right {
+        h1 {
+            font-size: 20px;
+            position: relative;
+
+        }
+    }
+    
+    main .main_block .right .frame__bg  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 267px;
+        margin-top: -110px;
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
+    }
+    main .main_block .right img {
+        width: 250px;
+    }
+    main .main_block .right p {
+        font-size: 10px;
+        text-align: center;
+        width: 300px;
+    }
+    main .main_block .right {
+        button {
+            width: 100px;
+            margin-top: 1px;
+        }
+
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    center {
+        justify-content: center;
+        align-items: center;
+        section {
+            // margin: 0 -268px;
+            position: absolute;
+        }
+    }
+    main .main_block .right  {
+        img {
+            width: 250px;
+        }
+        button {
+            width: 250px;
+            justify-content: center;
+            margin-left: 150px;
+        }
+    }
+    .right {
+        h1 {
+            font-size: 20px;
+            position: relative;
+
+        }
+    }
+    
+    main .main_block .right .frame__bg  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe {
+            margin-top: 97px;
+            margin-left: 39px;
+            width: 277px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 @media  all and (max-width: 400px) {
     body {
         width: 400px;

@@ -54,6 +54,9 @@
   display: flex;
   justify-content: center;
 }
+.wrapper:hover, .wrapper2:hover {
+  cursor: pointer;
+}
 
 .wrapper-btn {
   display: flex;
@@ -140,7 +143,195 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 399px) {
+/* 1440px adaptive */
+@media screen and (max-width: 1440px) {
+  .wrapper-btn button, .wrapper-btn2 button {
+    width: 300px;
+    padding: 5px;
+  }
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    justify-content: center;
+  }
+  .wrapper img {
+    margin: 0 auto;
+    width: 600px;
+  }
+  .wrapper2 {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .wrapper2 img {
+    width: 1170px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .wrapper-btn button, .wrapper-btn2 button {
+    width: 400px;
+    padding: 5px;
+  }
+  .wrapper-title-end h2 {
+    font-size: 60px;
+    text-align: center;
+    width: 1120px;
+  }
+  .modern {
+    margin-top: 70px;
+  }
+  .modern h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  .heroes {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .heroes .hero {
+    width: 278px;
+  }
+  .heroes .hero #text1 {
+    padding: 25px;
+  }
+  .heroes .hero #text3 {
+    padding: 25px;
+  }
+}
+/* 1024px adaptive */
+@media screen and (max-width: 1024px) {
+  .wrapper-btn button, .wrapper-btn2 button {
+    width: 300px;
+    padding: 5px;
+  }
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    justify-content: center;
+  }
+  .wrapper img {
+    margin: 0 auto;
+    width: 400px;
+  }
+  .wrapper2 {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .wrapper2 img {
+    width: 780px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .wrapper-title-end h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 800px;
+  }
+  .heroes {
+    max-width: 1024px;
+  }
+  .heroes .hero:first-child {
+    display: none;
+  }
+  .heroes .hero:last-child {
+    display: none;
+  }
+  #text2 {
+    padding: 60px 10px;
+  }
+  #text3 {
+    padding: 78px 15px;
+  }
+}
+/* 900px adaptive */
+@media screen and (max-width: 900px) {
+  .wrapper-btn button, .wrapper-btn2 button {
+    width: 200px;
+    padding: 5px;
+  }
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .wrapper img {
+    margin: 0 auto;
+    width: 340px;
+  }
+  .wrapper2 {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .wrapper2 img {
+    width: 660px;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper-btn button, .wrapper-btn2 button {
+    width: 400px;
+    padding: 5px;
+  }
+  .wrapper-title-end h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 700px;
+  }
+  .modern {
+    margin-top: 70px;
+  }
+  .modern h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  .heroes {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .heroes .hero {
+    width: 300px;
+  }
+  .heroes .imgblock {
+    width: 600px;
+  }
+  .heroes .imgblock img {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroes {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .heroes .hero {
+    width: 200px;
+  }
+  .heroes .hero .imgblock img {
+    width: 200px;
+  }
+  .heroes .imgblock {
+    width: 100px;
+  }
+  .heroes .imgblock img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
   .wrapper-btn button, .wrapper-btn2 button {
     width: 200px;
     padding: 5px;
@@ -148,6 +339,7 @@
   .wrapper {
     display: block;
     justify-content: center;
+    width: 400px;
   }
   .wrapper img {
     margin: 0 auto;
@@ -155,10 +347,33 @@
     display: block;
     justify-content: center;
   }
+  .wrapper2 {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .wrapper2 img {
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+  }
   .heroes {
     display: block;
     justify-content: center;
     width: 300px;
     margin: 0 auto;
+  }
+  .heroes .hero {
+    width: 300px;
+  }
+  .heroes .imgblock {
+    width: 100%;
+    max-width: 399px;
+  }
+  .heroes .imgblock img {
+    width: 295px;
+  }
+  .heroes .hero .imgblock img {
+    width: 300px;
   }
 }/*# sourceMappingURL=heroes.css.map */

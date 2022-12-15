@@ -37,16 +37,40 @@
     
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 1440px) {
     .newera {
+        h3 {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .newera {
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .newera {
+        h3 {
+            margin-top: 50px;
+        }
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .newera {
+        margin-top: 30px;
         justify-content: center;
         text-align: center;
         align-items: center;
         h3 {
+            // margin-top: 20px;
             text-align: center;
         }
         img {
-            width: 300px;
+            width: 280px;
         }
     }
+
 }

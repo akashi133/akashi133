@@ -6,6 +6,9 @@
   padding: 50px;
   gap: 15px;
 }
+.platform-logo:hover {
+  cursor: pointer;
+}
 
 .platform-logo div {
   border: 1px solid #fff;
@@ -45,10 +48,41 @@
   color: #71af3a;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 1024px) {
+  .platform-logo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .platform-logo div {
+    margin-bottom: 30px;
+  }
+  .platform-paragraph p {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+}
+@media screen and (max-width: 900px) {
+  .platform-logo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .platform-logo div {
+    margin-bottom: 30px;
+  }
+  .platform-paragraph p {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+}
+@media screen and (max-width: 400px) {
   .platform-logo {
     display: block;
-    flex-direction: column;
   }
   .platform-logo div {
     margin-bottom: 30px;
